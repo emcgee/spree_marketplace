@@ -2,7 +2,6 @@ module Spree
   class SupplierBankAccount < ActiveRecord::Base
 
     attr_accessor :account_number, :amount_1, :amount_2, :name, :routing_number, :type
-    attr_accessible :account_number, :amount_1, :amount_2, :name, :routing_number, :type
 
     belongs_to :supplier
 

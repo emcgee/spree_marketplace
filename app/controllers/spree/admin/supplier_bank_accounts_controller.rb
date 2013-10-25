@@ -54,4 +54,8 @@ class Spree::Admin::SupplierBankAccountsController < Spree::Admin::ResourceContr
       @object.supplier = @supplier
     end
 
+    def supplier_params
+      params.require(:SupplierBankAccount).permit(:account_number, :amount_1, :amount_2, :name, :routing_number, :type)
+    end
+
 end
